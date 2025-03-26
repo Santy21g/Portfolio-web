@@ -1,0 +1,223 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.profile-img-container {
+    flex: 0 0 150px; /* Tamaño fijo para la imagen */
+    margin-left: 40px;
+}
+
+.profile-img {
+    width: 200px; /* Cambié el tamaño de la imagen a 200px */
+    height: 200px; /* Asegúrate de que la altura sea proporcional */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #333;
+}
+
+.header-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Estilo para los títulos */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em; /* Tamaño más grande para los títulos */
+    font-weight: 600; /* Hacer el título más grueso */
+    color: #fff; /* Asegurarse de que los títulos sean blancos */
+    margin-top: 40px; /* Espacio arriba del título */
+    margin-bottom: 20px; /* Espacio abajo del título */
+    text-transform: uppercase; /* Transformar el texto a mayúsculas para darle más fuerza */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Asegurarnos de que las secciones se alineen correctamente */
+#about, #skills, #projects, #contact {
+    padding: 50px 20px;
+    color: #ddd;
+    text-align: center;
+}
+
+#about, #skills, #projects, #contact .container {
+    display: flex;
+    flex-direction: column; /* Asegura que los títulos estén arriba */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#about h2, #skills h2, #projects h2, #contact h2 {
+    font-size: 2em;
+    margin-bottom: 30px; /* Aumenté el margen inferior */
+}
+
+#about p, #projects p {
+    font-size: 2em;
+    margin-top: 30px; /* Aumenté el margen superior */
+}
+
+
+/* Mejorar la disposición de los elementos en los contenedores */
+#about p, #skills ul, #projects ul, #contact ul {
+    text-align: center;
+    width: 80%; /* Esto ayudará a que los elementos estén más centrados */
+    margin: 0 auto;
+}
+
+/* Sección Sobre mí */
+#about {
+    background-color: #222;
+}
+
+#about p {
+    font-size: 1.2em;
+    margin-top: 20px; /* Separar párrafo de título */
+}
+
+/* Sección Aptitudes */
+#skills {
+    background-color: #333;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Sección Proyectos */
+#projects {
+    display: block;
+    padding: 50px 70px;
+    background-color: #222;
+    color: #ddd;
+    width: 100%;
+}
+
+#projects h2 {
+    font-size: 2em; /* Tamaño ajustado del título para igualarlo a los otros títulos */
+    font-weight: 600;
+    margin-top: 0px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior para separar de la descripción */
+    text-align: left; /* Alineación del título a la izquierda */
+    padding-left: 20px; /* Espacio de la izquierda para igualarlo a los otros títulos */
+    width: 100%; /* Ocupa el ancho completo */
+    position: relative; /* Establece el título como relativo */
+    top: 100px; /* Mueve el título hacia abajo */
+}
+
+#projects p {
+    font-size: 1.2em;
+    margin-top: 0px; /* Menos espacio superior */
+    margin-left: 20px; /* Para mantener la alineación */
+    text-align: center; /* Alineación del texto */
+    width: 90%; /* Asegura que la descripción no se extienda demasiado */
+    max-width: 1000px; /* Limita el ancho máximo */
+    padding-left: 250px; /* Para que quede un poco hacia la derecha */
+}
+
+#projects .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alineación de los elementos */
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px; /* Para alinear con el título */
+    text-align: left; /* Alineación a la izquierda de los elementos dentro */
+}
+
+/* Lista de proyectos */
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 250px;
+}
+
+#projects li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#projects a {
+    color: #4a90e2; /* Azul más vistoso */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+#projects a:hover {
+    color: #fff; /* Blanco cuando el cursor pasa por encima */
+}
+
+/* Sección Contacto */
+#contact {
+    background-color: #333;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Estilos del pie de página */
+footer {
+    padding: 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+footer p {
+    color: #bbb;
+    margin: 0;
+}
+
+/* Estilo para la descripción de los roles */
+.role-description {
+    font-size: 1.2em;
+    color: #bbb;
+    margin-top: 20px;
+}
