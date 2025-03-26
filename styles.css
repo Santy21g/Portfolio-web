@@ -67,6 +67,9 @@ h2 {
 
 /* Asegurarnos de que las secciones se alineen correctamente */
 #about, #skills, #projects, #contact {
+    max-width: 1250px; /* Igual que en #projects */
+    margin: 0 auto; /* Centrar todas las secciones */
+    width: 100%;
     padding: 50px 20px;
     color: #ddd;
     text-align: center;
@@ -127,6 +130,7 @@ h2 {
 #projects {
     display: block;
     padding: 50px 70px;
+    max-width: 1150px;
     background-color: #222;
     color: #ddd;
     width: 100%;
@@ -191,6 +195,7 @@ h2 {
 /* Sección Contacto */
 #contact {
     background-color: #333;
+    
 }
 
 #contact ul {
@@ -220,4 +225,43 @@ footer p {
     font-size: 1.2em;
     color: #bbb;
     margin-top: 20px;
+}
+
+/* Estilos para tabletas */
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img-container {
+        margin: 0 auto 20px;
+    }
+
+    .header-text {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    #projects p, #projects ul {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #projects .content-container {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Estilos para móviles */
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
 }
